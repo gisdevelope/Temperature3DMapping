@@ -4,22 +4,6 @@ This directory contains a short description about TempMapping3D-software, which 
 
 With this software, Finnfuture Oy can create 3D- and 2D-graphs of room temperatures. These graphs can then be used in designing Finnsaver-systems that reduce waste heat in rooms.
 
-Requirements
------------
-
-Using software requires following software and hardware: 
-
-  - Measurement rod with atleast three [Ciseco XRF Dallas sensor boards](http://shop.ciseco.co.uk/temperature-xrf-development-sensor-dallas-ds18b20/) placed in different heights.
-  - [Ciseco SRF-Stick](http://shop.ciseco.co.uk/srf-stick-868-915-mhz-easy-to-use-usb-radio/).
-  - [(UART-adapter for programming new XRF-boards)](https://www.sparkfun.com/products/11812).
-  - .NET-Framework 4.5.
-
-Developing requires following third-party resources:
-
-  - [OxyPlot-libraries](https://oxyplot.codeplex.com/).
-  - [HelixToolkit-libraries](https://helixtoolkit.codeplex.com/).
-  - [EntityFramework](http://msdn.microsoft.com/fi-fi/data/ef.aspx).
-
 How does it work?
 -------------
 Room is assigned with X/Y-coordinates (amount of coordinates can be set by user). Then at each X/Y-coordinate, temperatures are taken with three Ciseco XRF wireless serial data boards that utilize Dallas DS18B20 temperature sensors. Ciseco XRF transfers temperatures through wireless serial port to software and software saves these temperature values along with coordinates and some other variables to sqlite-database.
@@ -51,6 +35,22 @@ NOTICE! 3D-report was just a quick prototype and is not complete as it will not 
 3D-report of temperature mapped room:
 
 ![picture](./images/3D_report.JPG?raw=true)  
+
+Requirements
+-----------
+
+Using software requires following software and hardware: 
+
+  - Measurement rod with atleast three [Ciseco XRF Dallas sensor boards](http://shop.ciseco.co.uk/temperature-xrf-development-sensor-dallas-ds18b20/) placed in different heights.
+  - [Ciseco SRF-Stick](http://shop.ciseco.co.uk/srf-stick-868-915-mhz-easy-to-use-usb-radio/).
+  - [(UART-adapter for programming new XRF-boards)](https://www.sparkfun.com/products/11812).
+  - .NET-Framework 4.5.
+
+Developing requires following third-party resources:
+
+  - [OxyPlot-libraries](https://oxyplot.codeplex.com/).
+  - [HelixToolkit-libraries](https://helixtoolkit.codeplex.com/).
+  - [EntityFramework](http://msdn.microsoft.com/fi-fi/data/ef.aspx).
 
 -------------------------------------------------------------------------------
 Copyright (c) Jarmo Puttonen <jarmo.puttonen@gmail.com>
