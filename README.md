@@ -1,8 +1,8 @@
 Temperature3DMapping
 ------
-This directory contains documentation for TempMapping3D-software.
+This directory contains a short description about TempMapping3D-software, which I developed for [Finnfuture Oy](http://finnfuture.fi/jarjestelmat/3d-lampotilakartoitus/).
 
-With this software, user can create 3D- and 2D-graphs of room temperature. These graphs can be used in designing Finnsaver-systems that reduce waste heat in rooms.
+With this software, Finnfuture Oy can create 3D- and 2D-graphs of room temperatures. These graphs can then be used in designing Finnsaver-systems that reduce waste heat in rooms.
 
 Requirements
 -----------
@@ -14,7 +14,7 @@ Using software requires following software and hardware:
   - [(UART-adapter for programming new XRF-boards)](https://www.sparkfun.com/products/11812).
   - .NET-Framework 4.5.
 
-Editing source code requires following third-party resources:
+Developing requires following third-party resources:
 
   - [OxyPlot-libraries](https://oxyplot.codeplex.com/).
   - [HelixToolkit-libraries](https://helixtoolkit.codeplex.com/).
@@ -46,7 +46,7 @@ Savings report:
 
 ![picture](./images/SavingsReport.JPG?raw=true)
 
-NOTICE! 3D-report is not complete as it will not be used in final product.
+NOTICE! 3D-report was just a quick prototype and is not complete as it will not be used in final product.
 
 3D-report of temperature mapped room:
 
